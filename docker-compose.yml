@@ -3,7 +3,7 @@ version: '3.8'
 services:
   node_backend:
     container_name: node_api
-    image: node_api:0.0.6
+    image: node_api:0.1.2
     build: 
       context: .
     ports:
@@ -27,6 +27,7 @@ services:
       - POSTGRES_DB=flats_db
     volumes:
       - ./app/data:/var/lib/postgresql/database/pgdata
+      - db_data:/var/lib/postgresql/data
 
 volumes:
-  nps_data: {}
+  db_data: {}
