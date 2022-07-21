@@ -10,6 +10,8 @@ This api allows you to access the information from the PSQL flats database.
           > docker-compose build
           > docker-compose up
 
+- **Fill the PSQL database**
+
   - Open terminal in **node_db** image inside **flats-app** container
   - Run commands bellow to import CSV export_file from **app/data** to **PSQL DB**
 
